@@ -11,11 +11,11 @@ hero:
       link: /1-100期/1.md
     - theme: alt
       text: GitHub 项目链接
-      link: https://github.com/Graysonnwu/SQXX-DB
+      link: https://github.com/Graysonnwu/EggrollDatabase
 features:
   - icon: 📚
     title: 1 ~ 100 期
-    details: /1-100期/1.md
+    details: 这个可以做成按钮跳转嘛？。。。
   - icon: 🖖
     title: Power of Vue meets Markdown
     details: Lorem ipsum...
