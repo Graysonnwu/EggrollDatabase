@@ -1,0 +1,18 @@
+{
+  "name": "eggroll-database",
+  "version": "1.0.0",
+  "description": "睡前消息文字稿数据库",
+  "main": "index.js",
+  "repository": "https://github.com/Graysonnwu/SQXX-DB",
+  "author": "Grayson Wu",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.17",
+    "vue": "^3.2.40"
+  }
+}
