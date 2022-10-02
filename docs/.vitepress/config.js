@@ -1,9 +1,16 @@
 const base = '/EggrollDatabase/'
+const faviconHref = `${base}eggroll.png`
 
 export default {
   title: 'EggrollDatabase',
   lang: 'zh-CN',
   base,
+  head: [
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: faviconHref }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: faviconHref }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: faviconHref }],
+    ['link', { rel: 'shortcut icon', href: faviconHref }],
+  ],
   themeConfig: {
     siteTitle: 'EggrollDatabase',
     logo: '/eggroll.png',
