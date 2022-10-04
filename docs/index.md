@@ -16,15 +16,12 @@ features:
   - icon: 📚
     title: 1 ~ 100 期
     details: 这个可以做成按钮跳转嘛？。。。
-  - icon: 🖖
-    title: Power of Vue meets Markdown
-    details: Lorem ipsum...
+  - icon: 📢
+    title: 从第19期开始，除非是重要图片，否则不会插入
+    details: 因为才第18期就有150MB了，全部500期估计得有5GB，github限制1GB
   - icon: 🛠️
-    title: Simple and minimal, always
-    details: Lorem ipsum...
-  - icon: ✨
-    title: Simple and minimal, always
-    details: Lorem ipsum...
+    title: 文字稿来源：蛋卷俱乐部（木又分享）
+    details: https://b75gu4xte2.feishu.cn/drive/folder/fldcneFUjHKc24wjCigRoOIyuVb
 ---
 
 <style>
