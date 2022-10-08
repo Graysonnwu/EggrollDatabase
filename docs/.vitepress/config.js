@@ -6,9 +6,14 @@ const faviconHref = `${base}favicon.png`
 
 export default withMermaid(
   defineConfig({
-    title: 'EggrollDatabase',
     lang: 'zh-CN',
+    title: 'EggrollDatabase',
+    description: '蛋卷数据库，存放睡前消息文字稿',
+
     base,
+    lastUpdated: true,
+    cleanUrls: 'without-subfolders',
+
     head: [
       ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: faviconHref }],
       ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: faviconHref }],
@@ -16,10 +21,24 @@ export default withMermaid(
       ['link', { rel: 'shortcut icon', href: faviconHref }],
       ['meta', {name: "google-site-verification", content: "dlHmuEjhVXOqsfWy29EX9OcngNyw4jMGSbmJ_n6oph8"}]
     ],
+
     themeConfig: {
       siteTitle: 'EggrollDatabase',
       logo: '/eggroll.png',
-
+      editLink: {
+        pattern: 'https://github.com/graysonnwu/EggrollDatabase/edit/main/docs/:path',
+        text: '在 GitHub 上编辑此页'
+      },
+      lastUpdatedText: '最近更新',
+      docFooter: {
+        prev: '上一篇',
+        next: '下一篇'
+      },
+      outline: 'deep',
+      footer: {
+        message: 'MIT Licensed',
+        copyright: 'Copyright © 2022 Eggroll The Cat'
+      },
       nav: [
         { text: '1~100期', link: '/1-100期/', activeMatch: '/1-100期/' },
         { text: '101~200期', link: '/101-200期/', activeMatch: '/101-200期/' },

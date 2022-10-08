@@ -14,7 +14,7 @@ hero:
       link: https://github.com/Graysonnwu/EggrollDatabase
 features:
   - icon: 📚
-    title: 已经更新到第20期
+    title: 已经更新到第35期
     details: 这个可以做成按钮跳转嘛？。。。
   - icon: 📢
     title: 从第19期开始，除非是重要图片，否则不会插入
