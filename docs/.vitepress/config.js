@@ -14,6 +14,7 @@ export default withMermaid(
       ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: faviconHref }],
       ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: faviconHref }],
       ['link', { rel: 'shortcut icon', href: faviconHref }],
+      ['meta', {name: "google-site-verification", content: "dlHmuEjhVXOqsfWy29EX9OcngNyw4jMGSbmJ_n6oph8"}]
     ],
     themeConfig: {
       siteTitle: 'EggrollDatabase',
