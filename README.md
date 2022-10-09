@@ -2,4 +2,4 @@
 
 蛋卷数据库，《睡前消息》文字稿合集
 
-https://graysonnwu.github.io/EggrollDatabase/
+eggroll.cyou

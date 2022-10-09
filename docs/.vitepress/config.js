@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 import { withMermaid } from "vitepress-plugin-mermaid";
 
-const base = '/EggrollDatabase/'
+const base = '/'
 const faviconHref = `${base}favicon.png`
 
 export default withMermaid(
