@@ -61,7 +61,9 @@ export default withMermaid(
       },
       outline: 'deep',
       footer: {
-        message: `<a href="https://icp.gov.moe/?keyword=20222458" target="_blank">萌ICP备20222458号</a>`,
+        message: `<img style="width:23px;height:23px;vertical-align:bottom;display:inline;" src="/moe.png"/>
+        <a href="https://icp.gov.moe" target="_blank">萌ICP备 </a>
+        <a href="https://icp.gov.moe/?keyword=20222458" target="_blank"> 20222458号</a>`,
         copyright: 'Copyright © 2022 eggroll.cyou'
       },
       nav: [
