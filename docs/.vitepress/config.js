@@ -61,8 +61,8 @@ export default withMermaid(
       },
       outline: 'deep',
       footer: {
-        message: 'MIT Licensed',
-        copyright: 'Copyright © 2022 Eggroll The Cat'
+        message: `<a href="https://icp.gov.moe/?keyword=20222458" target="_blank">萌ICP备20222458号</a>`,
+        copyright: 'Copyright © 2022 eggroll.cyou'
       },
       nav: [
         { text: '1~100期', link: '/1-100期/', activeMatch: '/1-100期/' },
