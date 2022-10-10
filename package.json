@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "睡前消息文字稿数据库",
   "main": "index.js",
-  "repository": "https://github.com/Graysonnwu/SQXX-DB",
+  "repository": "https://github.com/Graysonnwu/EggrollDatabase",
   "author": "Grayson Wu",
   "license": "MIT",
   "scripts": {
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "mermaid": "^9.1.7",
+    "valine": "^1.5.1",
     "vitepress-plugin-mermaid": "^2.0.8"
   }
 }
