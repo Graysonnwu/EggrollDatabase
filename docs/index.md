@@ -2,9 +2,12 @@
 layout: home
 
 hero:
-  name: EggrollDatabase
-  text: 蛋卷数据库
-  tagline: ——《睡前消息》文字稿合集（仍在施工，临时测试）
+  name: 🐱蛋卷数据库
+  text: EggrollDatabase
+  tagline: 《睡前消息》文字稿合集 | 蛋卷纪念网站
+  image:
+    src: /eggroll-large.png
+    alt: logo
   actions:
     - theme: brand
       text: 点击右上角开始导航
@@ -12,22 +15,40 @@ hero:
     - theme: alt
       text: GitHub 项目链接
       link: https://github.com/Graysonnwu/EggrollDatabase
+    - theme: alt
+      text: 网站仍在施工中...
+      link: https://eggroll.cyou
 features:
-  - icon: 📚
-    title: 已经更新到第42期
-    details: 这个可以做成按钮跳转嘛？。。。
-  - icon: 📢
-    title: 从第19期开始，除非是重要图片，否则不会插入
+  - icon: 🐱
+    title: 已经更新到第46期
+    details: 这个可以做成按钮跳转嘛？。。。另外algolia全文搜索等做到四百多期的时候再加上吧
+    link: /test.md
+  - icon: 😿
+    title: 从第19期开始，将只插入重要图片
     details: 因为才第18期就有150MB了，全部500期估计得有5GB，github限制1GB
-  - icon: 🛠️
+  - icon: 😽
     title: 文字稿来源：蛋卷俱乐部
     details: https://www.123pan.com/s/BrA8Vv-xR4Gv
+    link: https://www.123pan.com/s/BrA8Vv-xR4Gv
 ---
 
 <style>
   :root {
     --vp-home-hero-name-color: transparent;
+    --vp-home-hero-image-filter: blur(70px);
+    --vp-home-hero-image-background-image: linear-gradient( 25deg, #BDB76B 30%, #41d1ff );
     --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+
+    /* brand按钮 */
+    --vp-button-brand-border: #00a6ff;
+    --vp-button-brand-text: #e6e6e6;
+    --vp-button-brand-bg: #1689c7;
+
+    --vp-button-brand-hover-border: #00a6ff;
+    --vp-button-brand-hover-text: #fff;
+    --vp-button-brand-hover-bg: #00a6ff;
+
+    --vp-button-brand-active-border: #bafff9;
 }
 </style>
 
