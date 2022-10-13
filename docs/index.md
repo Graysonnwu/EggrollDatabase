@@ -20,7 +20,7 @@ hero:
       link: https://eggroll.cyou
 features:
   - icon: 🐱
-    title: 已经更新到第46期
+    title: 已经更新到第52期
     details: 这个可以做成按钮跳转嘛？。。。另外algolia全文搜索等做到四百多期的时候再加上吧
     link: /test.md
   - icon: 😿
@@ -31,24 +31,4 @@ features:
     details: https://www.123pan.com/s/BrA8Vv-xR4Gv
     link: https://www.123pan.com/s/BrA8Vv-xR4Gv
 ---
-
-<style>
-  :root {
-    --vp-home-hero-name-color: transparent;
-    --vp-home-hero-image-filter: blur(70px);
-    --vp-home-hero-image-background-image: linear-gradient( 25deg, #BDB76B 30%, #41d1ff );
-    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
-
-    /* brand按钮 */
-    --vp-button-brand-border: #00a6ff;
-    --vp-button-brand-text: #e6e6e6;
-    --vp-button-brand-bg: #1689c7;
-
-    --vp-button-brand-hover-border: #00a6ff;
-    --vp-button-brand-hover-text: #fff;
-    --vp-button-brand-hover-bg: #00a6ff;
-
-    --vp-button-brand-active-border: #bafff9;
-}
-</style>
 

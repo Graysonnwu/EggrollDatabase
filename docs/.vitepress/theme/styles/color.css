@@ -1,0 +1,71 @@
+/**
+ * Colors
+ * -------------------------------------------------------------------------- */
+
+:root {
+    --vp-c-accent: hsl(200, 65%, 50%);
+    --vp-c-brand: hsl(200, 65%, 50%);
+    --vp-c-brand-light: hsl(200, 57%, 55%);
+    --vp-c-brand-lighter: hsl(200, 51%, 64%);
+    --vp-c-brand-dark: hsl(200, 65%, 42%);
+    --vp-c-brand-darker: hsl(200, 69%, 32%);
+    --vp-c-text-light-2: rgba(56, 56, 56, 0.75);
+    --vp-c-text-code: hsl(210, 29%, 24%);
+    --vp-code-block-bg: rgba(125, 125, 125, 0.06);
+    --vp-code-block-hover-bg: rgba(125, 125, 125, 0.1);
+    --vp-c-bg-mute: #f5f5f5;
+    --vp-custom-block-tip-border: var(--vp-c-brand);
+    --vp-custom-block-tip-text: var(--vp-c-brand-dark);
+    --vp-custom-block-tip-bg: transparent;
+    --vp-custom-block-tip-code-bg: var(--vp-custom-block-tip-bg);
+    --vp-c-text-dark-3: rgba(56, 56, 56, 0.8);
+    --vp-code-copy-code-bg: initial;
+    --vp-code-copy-code-hover-bg: rgba(125, 125, 125, 0.2);
+    --vp-code-copy-code-active-text: var(--vp-c-text-dark-3);
+}
+
+.dark {
+    --vp-c-accent: hsl(200, 100%, 60%);
+    --vp-c-brand: hsl(200, 100%, 60%);
+    --vp-c-brand-light: hsl(200, 72%, 62%);
+    --vp-c-brand-lighter: hsl(200, 75%, 72%);
+    --vp-c-brand-dark: hsl(200, 76%, 48%);
+    --vp-c-brand-darker: hsl(200, 78%, 39%);
+    --vp-code-block-bg: rgba(0, 0, 0, 0.2);
+    --vp-c-text-code: #f5f7fa;
+    --vp-c-bg-mute: #2d2d2d;
+    --vp-c-text-dark-3: rgba(235, 235, 235, 0.38);
+    --vp-code-copy-code-bg: initial;
+    --vp-code-copy-code-hover-bg: rgba(255, 255, 255, 0.05);
+}
+
+/* 主页 */
+:root {
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-image-filter: blur(30px);
+    --vp-home-hero-image-background-image: linear-gradient( 25deg, #BDB76B 30%, #41d1ff );
+    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+  
+    /* brand按钮 */
+    --vp-button-brand-border: hsl(210, 100%, 50%);
+    --vp-button-brand-text: var(--vp-c-text-dark-1);
+    --vp-button-brand-bg: hsl(210, 80%, 43%);
+    --vp-button-brand-hover-border: hsl(210, 100%, 50%);
+    --vp-button-brand-hover-text: #fff;
+    --vp-button-brand-hover-bg: hsl(210, 100%, 50%);
+    --vp-button-brand-active-border: hsl(200, 100%, 79%);
+}
+
+@media (min-width: 640px) {
+    :root {
+        --vp-home-hero-image-filter: blur(56px);
+    }
+}
+
+@media (min-width: 960px) {
+    :root {
+        --vp-home-hero-image-filter: blur(72px);
+    }
+}
+  
+  

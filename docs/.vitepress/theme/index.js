@@ -1,8 +1,10 @@
+import Theme from 'vitepress/theme'
+import MyLayout from './MyLayout.vue'
+
 // import 'uno.css'
 import './styles/index.css'
+import './styles/color.css'
 
-import DefaultTheme from 'vitepress/theme'
-import MyLayout from './MyLayout.vue'
 // import VPFeature from './components/VPFeature.vue';
 // import VPFeatures from './components/VPFeatures.vue';
 
@@ -14,7 +16,7 @@ import MyLayout from './MyLayout.vue'
 // }
 
 export default {
-    ...DefaultTheme,
+    ...Theme,
     // override the Layout with a wrapper component that injects the slots
     Layout: MyLayout,
     // enhanceApp({ app, router, siteData }) {
