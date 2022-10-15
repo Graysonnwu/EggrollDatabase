@@ -13,3 +13,8 @@ body {
 body:has(.VPSidebar.open) {
   overflow: hidden;
 }
+
+/* 引用块段间距 0px -> 4px */
+.vp-doc blockquote > p {
+  margin: 6px;
+}
