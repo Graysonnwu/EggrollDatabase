@@ -14,7 +14,84 @@ body:has(.VPSidebar.open) {
   overflow: hidden;
 }
 
-/* 引用块段间距 0px -> 4px */
+/* 点击图片放大设置 */
+.medium-zoom-overlay {
+  z-index: 20;
+}
+
+.medium-zoom-image {
+  z-index: 21;
+}
+
+/* 引用块样式调整：背景灰色，字样式与正文相同 */
 .vp-doc blockquote > p {
   margin: 6px;
+  color: var(--vp-c-text-1);
+}
+
+.vp-doc blockquote {
+  border-radius: 6px;
+  border-left: 6px solid #7777776d;
+  background-color: #3d3d3d2e;
+  padding: 7px 14px 7px 10px;
+}
+
+.dark .vp-doc blockquote {
+  border-left: 6px solid #777777ae;
+  background-color: #3d3d3da0;
+}
+
+/* 各级标题调整：上面加边框，后面加#号 */
+.vp-doc h2 {
+  /* padding-bottom: 0.3em; */
+  padding-top: 1ch;
+  border-top: 2px solid var(--vp-c-divider);
+}
+
+.vp-doc h3 {
+  padding-top: 0.5ch;
+  border-top: 1px dashed var(--vp-c-divider-light);
+}
+
+.vp-doc h4 {
+  /* padding-top: 1ch; */
+  margin-top: 16px;
+  font-size: 18px;
+}
+
+.vp-doc h5 {
+  /* padding-top: 1ch; */
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.vp-doc h6 {
+  /* padding-top: 1ch; */
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.vp-doc h2::after,
+.vp-doc h3::after,
+.vp-doc h4::after {
+  font-weight: 400;
+  text-align: left;
+  width: 5ch;
+  padding-left: 1ch;
+  margin-right: -5ch;
+  color: #808e95a9;
+  display: inline-block;
+}
+
+.vp-doc h2::after {
+  content: '#';
+}
+
+.vp-doc h3::after {
+  content: '##';
+}
+
+.vp-doc h4::after {
+  content: '###';
 }

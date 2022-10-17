@@ -67,7 +67,7 @@ export default withMermaid(
         prev: '上一篇',
         next: '下一篇'
       },
-      outline: 'deep',
+      outline: [2,3],
       footer: {
         message: `<img style="width:23px;height:23px;vertical-align:bottom;display:inline;" src="/moe.png"/>
         <a href="https://icp.gov.moe" target="_blank">萌ICP备 </a>
@@ -80,6 +80,7 @@ export default withMermaid(
         { text: '201~300期', link: '/201-300期/', activeMatch: '/201-300期/' },
         { text: '301~400期', link: '/301-400期/', activeMatch: '/301-400期/' },
         { text: '401~500期', link: '/401-500期/', activeMatch: '/401-500期/' },
+        { text: '蛋卷俱乐部', link: '/club/', activeMatch: '/club/' },
         // { text: 'Github', link: 'https://github.com/Graysonnwu/EggrollDatabase' },
 
         // {
@@ -151,14 +152,14 @@ export default withMermaid(
               { text: '11. 为啥美国华人不想要华裔总统？', link: '/1-100期/11' },
               { text: '12. 在印度，你甚至可以找到全人工版“人工智能”', link: '/1-100期/12' },
               { text: '13. 院士被关五年，科研停了，却一份判决书都没有？', link: '/1-100期/13' },
-              { text: '13.5. 解放军打赢淮海战役，是如何在后勤上开挂的？', link: '/1-100期/13.5' },
+              { text: '13.5. 解放军打赢淮海战役，是如何在后勤上开挂的？', link: '/1-100期/13_5' },
               { text: '14. 巴西非但不想给亚马逊灭火，甚至有点想多烧一会', link: '/1-100期/14' },
               { text: '15. 四川主动送来高压电，江西为啥不想要？', link: '/1-100期/15' },
               { text: '16. 如果中国也收“单身税”，靠谁来生下一代？', link: '/1-100期/16' },
               { text: '17. 让蔡徐坤拿大奖的榜单，7年前就在台湾省丢过人', link: '/1-100期/17' },
               { text: '18. 日本：捕鱼配额不够怎么办？从台湾手里拿一点', link: '/1-100期/18' },
               { text: '19. 去武汉最偏僻的大学，洗大学里最贵的澡堂', link: '/1-100期/19' },
-              { text: '19.5. 中国工程师动作太快，语文地理老师追不上了', link: '/1-100期/19.5' },
+              { text: '19.5. 中国工程师动作太快，语文地理老师追不上了', link: '/1-100期/19_5' },
               { text: '20. 日本首相也“世袭”？小泉：又轮到我家了', link: '/1-100期/20' },
             ]
           },
@@ -336,6 +337,24 @@ export default withMermaid(
             ]
           },
         ],
+
+        '/club/': [
+          {
+            text: '0 ~ 10 期',
+            collapsible: true,
+            collapsed: false,
+            items: [
+              { text: '第零期（22-07-17）试刊', link: '/club/0' },
+              { text: '第一期（22-07-25）', link: '/club/1' },
+              { text: '第二期（22-08-01）', link: '/club/2' },
+              { text: '第三期（22-08-09）', link: '/club/3' },
+              { text: '第四期（22-08-16）', link: '/club/4' },
+              { text: '第五期（22-08-24）', link: '/club/5' },
+              { text: '第六期（22-09-01）', link: '/club/6' },
+              { text: '第七期（22-09-12）', link: '/club/7' },
+            ]
+          },
+        ],
       }
 
 
@@ -369,7 +388,7 @@ export default withMermaid(
       //   //       collapsible: true,
       //   //       collapsed: true,
       //   //       items: [
-      //   //         { text: 'Section A Item A1', link: '/1-100期/19.5' },
+      //   //         { text: 'Section A Item A1', link: '/1-100期/19_5' },
       //   //         { text: 'Section A Item A2', link: '/1-100期/99' }
       //   //       ]
       //   //     },

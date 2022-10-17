@@ -16,6 +16,7 @@
     "vue": "^3.2.40"
   },
   "dependencies": {
+    "medium-zoom": "^1.0.6",
     "mermaid": "^9.1.7",
     "sitemap": "^7.1.1",
     "valine": "^1.5.1",
