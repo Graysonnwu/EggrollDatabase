@@ -4,6 +4,7 @@ import { onMounted } from 'vue';
 import mediumZoom from 'medium-zoom';
 
 // import 'uno.css'
+import './styles/mathjax3.css';
 import './styles/index.css'
 import './styles/color.css'
 

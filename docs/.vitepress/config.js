@@ -3,6 +3,9 @@ import { withMermaid } from "vitepress-plugin-mermaid";
 import { createWriteStream } from 'node:fs'
 import { resolve } from 'node:path'
 import { SitemapStream } from 'sitemap'
+import mathjax3 from 'markdown-it-mathjax3';
+
+const customElements = ['mjx-container'];
 
 const links = []
 const base = '/'
@@ -29,6 +32,20 @@ export default withMermaid(
         { src: '//unpkg.com/valine/dist/Valine.min.js'},
       ],
     ],
+
+    // LaTex支持: markdown-it-mathjax3
+    markdown: {
+      config: (md) => {
+        md.use(mathjax3);
+      },
+    },
+    vue: {
+      template: {
+        compilerOptions: {
+          isCustomElement: (tag) => customElements.includes(tag),
+        },
+      },
+    },
 
     // resolve: {
     //   alias: {

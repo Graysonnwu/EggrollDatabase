@@ -16,6 +16,7 @@
     "vue": "^3.2.40"
   },
   "dependencies": {
+    "markdown-it-mathjax3": "^4.3.2",
     "medium-zoom": "^1.0.6",
     "mermaid": "^9.1.7",
     "sitemap": "^7.1.1",
