@@ -1,5 +1,6 @@
 ---
 layout: home
+title: EggrollDatabase - 睡前消息文字稿合集
 
 hero:
   name: 🐱蛋卷数据库

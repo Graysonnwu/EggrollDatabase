@@ -14,8 +14,8 @@ const faviconHref = `${base}favicon.png`
 export default withMermaid(
   defineConfig({
     lang: 'zh-CN',
-    title: 'EggrollDatabase',
-    description: '蛋卷数据库，存放睡前消息文字稿',
+    title: '蛋卷数据库',
+    description: '蛋卷数据库，睡前消息文字稿合集',
 
     base,
     lastUpdated: true,
