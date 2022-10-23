@@ -9,7 +9,7 @@ const customElements = ['mjx-container'];
 
 const links = []
 const base = '/'
-const faviconHref = `${base}favicon.png`
+const faviconHref = `${base}favicon.ico`
 
 export default withMermaid(
   defineConfig({
