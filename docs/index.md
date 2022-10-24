@@ -33,13 +33,6 @@ features:
     link: https://www.123pan.com/s/BrA8Vv-xR4Gv
 ---
 
-<!-- <br>
-<br>
-
-<script setup>
-import homebutton from './.vitepress/theme/components/HomeButton.vue'
-import bc from './.vitepress/theme/components/BiliComment.vue'
-</script>
-
+<!--
 <homebutton :list="[1, 2, 3, 4, 5, 6, 7, 8, 9]"/>
 <bc /> -->

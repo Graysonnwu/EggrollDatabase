@@ -18,6 +18,10 @@ body:has(.VPSidebar.open) {
   overflow: hidden;
 }
 
+.twitter-tweet-rendered {
+  border-radius: 13px;
+}
+
 /* 点击图片放大设置 */
 .medium-zoom-overlay {
   z-index: 20;

@@ -27,10 +27,8 @@ export default withMermaid(
       ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: faviconHref }],
       ['link', { rel: 'shortcut icon', href: faviconHref }],
       ['meta', {name: "google-site-verification", content: "RsTVbfw9S-ETngErdoSzUWp0A5H-sgxmUJCFYTtWvcU"}],
-      [
-        "script",
-        { src: '//unpkg.com/valine/dist/Valine.min.js'},
-      ],
+      ["script", { src: '//unpkg.com/valine/dist/Valine.min.js'},],
+      ["script", { src: 'https://platform.twitter.com/widgets.js'},],
     ],
 
     // LaTex支持: markdown-it-mathjax3

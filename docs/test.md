@@ -94,7 +94,9 @@
 :::
 ```
 
-## $\LaTeX$ 支持
+## 插件
+
+### $\LaTeX$ 支持（markdown-it-mathjax3）
 行内$\LaTeX$支持
 
 公式块支持
@@ -112,8 +114,44 @@ $$
 
 但是为mathjax3，没有xy-pic这类绘制曲线图表的库，只有基础包
 
+### Twitter Embed（vue-tweet）
 
-## 扩展 Vue 组件
+原生方法：https://publish.twitter.com/#
+
+<blockquote class="twitter-tweet" align="center"><p lang="ja" dir="ltr">好想有人陪着呀……</p>&mdash; 我好惨。我是垃圾。我全面溃败。来生再见。 (@timoskky) <a href="https://twitter.com/timoskky/status/1584179519874682882?ref_src=twsrc%5Etfw">October 23, 2022</a></blockquote>
+
+```html
+<blockquote class="twitter-tweet" align="center"><p lang="ja" dir="ltr">好想有人陪着呀……</p>&mdash; 我好惨。我是垃圾。我全面溃败。来生再见。 (@timoskky) <a href="https://twitter.com/timoskky/status/1584179519874682882?ref_src=twsrc%5Etfw">October 23, 2022</a></blockquote>
+```
+vue-tweet插件：https://github.com/DannyFeliz/vue-tweet
+
+<Tweet tweet-id="1582133989544165376" width=550 align="center" lang="zh-cn"/>
+
+```html
+<Tweet tweet-id="1582133989544165376" width=550 align="center" lang="zh-cn"/>
+```
+### mermaid（vitepress-plugin-mermaid）
+
+```mermaid
+sequenceDiagram
+Alice->>John: Hello John, how are you?
+loop Healthcheck
+    John->>John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John-->>Alice: Great!
+John->>Bob: How about you?
+Bob-->>John: Jolly good!
+```
+
+### 图片点击放大（medium-zoom）
+
+![test](/eggroll-large.png)
+
+### Sitemap（sitemap）
+
+[点击加载](/sitemap.xml)
+### 自定义扩展 Vue 组件
 
 <BiliComment name="贰鼠" content="过去中国搞建设虽然也有通过无人区的铁路，但是绝大多数铁路至少有一端是人口稠密地区，这条敦格铁路的两端，敦煌19万人口，格尔木也只有20万人口出头，<br>为什么要为这两个小城市修一条直通的铁路呢？" time="2022-09-29 15:58" like="2211"/>
 
@@ -127,3 +165,6 @@ $$
 <BiliCommentX name="昵称" content="内容<br>换行"/>
 ```
 
+### 评论系统（Valine）
+
+如下↓
