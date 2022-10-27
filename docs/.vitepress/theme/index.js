@@ -4,6 +4,7 @@ import { onMounted, watch, nextTick } from 'vue';
 import { useRoute } from "vitepress";
 import mediumZoom from 'medium-zoom';
 import Tweet from "vue-tweet";
+// import { Bar } from 'vue-chartjs'
 
 // import 'uno.css'
 import './styles/mathjax3.css';
@@ -12,6 +13,7 @@ import './styles/color.css'
 
 import BiliComment from './components/BiliComment.vue';
 import BiliCommentX from './components/BiliCommentX.vue';
+import LineChartx from './components/LineChartx.vue';
 
 // import VPFeature from './components/VPFeature.vue';
 // import VPFeatures from './components/VPFeatures.vue';
@@ -55,9 +57,15 @@ export default {
         app.component("BiliComment",BiliComment);
         app.component("BiliCommentX",BiliCommentX);
         app.component("Tweet",Tweet);
+        app.component("LineChartx",LineChartx);
         // app.component("VPFeature",VPFeature);
         // app.component("VPFeatures",VPFeatures);
             // app is the Vue 3 app instance from `createApp()`. router is VitePress'
             // custom router. `siteData`` is a `ref`` of current site-level metadata.
     },
+
+    // extends: Bar,
+    // mounted () {
+    //     this.renderChart(data, options)
+    // }
 }

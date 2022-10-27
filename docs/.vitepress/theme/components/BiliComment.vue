@@ -80,7 +80,8 @@
   color:white;
   font-size:20px;
   margin:0px;
-  padding-top:6px;
+  /* padding-top:6px; */
+  line-height: 40px;
   text-align:center;
   
 }

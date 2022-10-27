@@ -10,6 +10,23 @@ body {
   /* --vp-font-family-base: "Noto Serif SC", "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif */
 }
 
+/* 图片居中 */
+.vp-doc img {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+  max-height: 365px;
+}
+/* 图片下方注释 */
+.vp-doc .imgCaption {
+  text-align: center;
+  font-size: 14px;
+  color:#777;
+  margin-top: -10px;
+}
+
 .VPSidebar {
   overscroll-behavior: contain;
 }

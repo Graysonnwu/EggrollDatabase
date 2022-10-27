@@ -1,5 +1,8 @@
 # 测试页面
 
+<LineChartx />
+<!-- <linechart :chartData="{labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],datasets: [{label: 'Data One',backgroundColor: '#f87979',data: [40, 39, 10, 40, 39, 80, 40]}]}" :chartOptions="{responsive: true,maintainAspectRatio: false}"/> -->
+
 ## 常用emoji
 
 | 🔄 后续hzxu | ⏩ 预告kkjb | 🔘 简讯jmxy | 📰 广告bcvi | 💬 评论pkly |
