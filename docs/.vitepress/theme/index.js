@@ -33,22 +33,21 @@ export default {
     // 目前有个bug，route变化后点击放大图片就不起作用了，可能需要一个watcher
     // https://github.com/vuejs/vitepress/issues/854
     // 10-23 更新：根据上面的代码自己改了下，但是逻辑一团糟，功能倒是实现了，希望有大佬能改一下
+    // 10-28 更新：自己改了下，修复了刷新会导致页面只加载底部部分的bug
     setup() {
         const route = useRoute();
-        const zoom = mediumZoom('.main img', { background: '#000000d3' });
-        onMounted(() => {
-            // // ![](path/to/file.jpg){data-zoomable} 带后缀的注册
-            // mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' });
+        const zoom = () => {
+            // ![](path/to/file.jpg){data-zoomable} 带后缀的注册
+            // new mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' });
             // ![](path/to/file.jpg) 全局注册
-            mediumZoom('.main img', { background: '#000000d3' });
+            new mediumZoom('.main img', { background: '#000000d3' });
+        }
+        onMounted(() => {
+            zoom();
         });
-        zoom.refresh = () => {
-            zoom.detach()
-            zoom.attach(':not(a) > img:not(.image-src)')
-        };
         watch(
             () => route.path,
-            () => nextTick(() => zoom.refresh()),
+            () => nextTick(() => zoom()),
         )
     },
 
