@@ -367,6 +367,7 @@ export default withMermaid(
               { text: '第五期（22-08-24）', link: '/club/5' },
               { text: '第六期（22-09-01）', link: '/club/6' },
               { text: '第七期（22-09-12）', link: '/club/7' },
+              { text: '第八期（22-10-24）', link: '/club/8' },
             ]
           },
         ],

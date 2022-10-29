@@ -27,13 +27,14 @@ import BiliCommentX from './components/BiliCommentX.vue';
 
 export default {
     ...Theme,
-    // override the Layout with a wrapper component that injects the slots
+    // 注释掉就会取消评论系统，断网时评论系统会影响路由变化的内容刷新
     Layout: MyLayout,
 
-    // 目前有个bug，route变化后点击放大图片就不起作用了，可能需要一个watcher
-    // https://github.com/vuejs/vitepress/issues/854
-    // 10-23 更新：根据上面的代码自己改了下，但是逻辑一团糟，功能倒是实现了，希望有大佬能改一下
-    // 10-28 更新：自己改了下，修复了刷新会导致页面只加载底部部分的bug
+    /**  medium-zoom 配置 
+    - 目前有个bug，route变化后点击放大图片就不起作用了，可能需要一个watcher
+    https://github.com/vuejs/vitepress/issues/854
+    - 10-23 更新：根据上面的代码自己改了下，但是逻辑一团糟，功能倒是实现了，希望有大佬能改一下
+    - 10-28 更新：自己改了下，修复了刷新会导致页面只加载底部部分的bug **/
     setup() {
         const route = useRoute();
         const zoom = () => {
