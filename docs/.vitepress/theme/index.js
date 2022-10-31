@@ -12,7 +12,7 @@ import './styles/index.css'
 import './styles/color.css'
 
 import BiliComment from './components/BiliComment.vue';
-import BiliCommentX from './components/BiliCommentX.vue';
+import BiliCommentTest from './components/BiliCommentTest.vue';
 // import LineChartx from './components/LineChartx.vue';
 
 // import VPFeature from './components/VPFeature.vue';
@@ -55,7 +55,7 @@ export default {
     // 注册评论组件
     enhanceApp({ app, router, siteData }) {
         app.component("BiliComment",BiliComment);
-        app.component("BiliCommentX",BiliCommentX);
+        app.component("BiliCommentTest",BiliCommentTest);
         // app.component("Tweet",Tweet);
         // app.component("LineChartx",LineChartx);
         // app.component("VPFeature",VPFeature);

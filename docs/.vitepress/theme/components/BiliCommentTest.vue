@@ -50,6 +50,7 @@
     </div>
 </template>
 
+<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
 .comment{
@@ -71,7 +72,7 @@
   margin:16px 0px 0px 16px;
   /* background: hsl(145, 95%, 35%); */
   background: v-bind('hsl_bg_color');
-  border-radius:300px;
+  border-radius:50%;
 }
 
 .comment .avatar #name{
@@ -133,4 +134,5 @@
   cursor:pointer;
   opacity:1.0;
 }
+
 </style>
