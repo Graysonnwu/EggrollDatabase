@@ -129,3 +129,12 @@ body:has(.VPSidebar.open) {
 .vp-doc h4::after {
   content: '###';
 }
+
+/* BiliComment组件中的reply回复人昵称 */
+.bc-reply {
+  color:#FB7299;
+  font-size:13px;
+  font-weight: bold;
+  /* margin-right:10px; */
+  margin-top: 8px;
+}
