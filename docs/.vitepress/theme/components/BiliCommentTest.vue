@@ -6,11 +6,14 @@
         time?:String,
         like?:String,
         reply?:String,
+        uid?:String,
     }>()
     const namex = ref(props.name)['value'];
     // const contentx = ref(props.content)['value'];
     // const timex = ref(props.time)['value'];
     // const likex = ref(props.like)['value'];
+
+    // 头像背景颜色根据昵称变化
     function getBackgroundColor(stringInput) {
         let stringUniqueHash = [...stringInput].reduce((acc, char) => {
             return char.charCodeAt(0) + ((acc << 5) - acc);
@@ -19,6 +22,9 @@
     }
     const hsl_bg_color = getBackgroundColor(namex)
     // console.log(namex,timex,likex,contentx)
+
+    // 用B站api获取头像 https://api.live.bilibili.com/xlive/web-room/v1/index/getDanmuMedalAnchorInfo?ruid={uid} 具体在返回值树状结构的[data][rface]
+    
 </script>
 
 <template>
@@ -31,8 +37,9 @@
             <!-- 昵称 -->
             <div class ="username">{{name}}</div>
             <div class ="user-comment">
-                <!-- 评论内容 -->
+                <!-- 评论内容，添加插槽方式 -->
                 <p v-if="content" v-html="content"></p>
+                <p style="font-size: 15px;"><slot></slot></p>
                 <!-- 评论信息（时间、赞踩） -->
                 <div v-if="time" class ="comment-info" style="display:inline;">
                     <!-- 时间戳 -->

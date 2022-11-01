@@ -31,8 +31,9 @@
             <!-- 昵称 -->
             <div class ="username">{{name}}</div>
             <div class ="user-comment">
-                <!-- 评论内容 -->
+                <!-- 评论内容，添加插槽方式 -->
                 <p v-if="content" v-html="content"></p>
+                <p class="slot-content"><slot></slot></p>
                 <!-- 评论信息（时间、赞踩） -->
                 <div v-if="time" class ="comment-info" style="display:inline;">
                     <!-- 时间戳 -->
@@ -90,7 +91,7 @@
 
 .comment .wrapper{
     float:left;
-    width:calc(100% - 80px);
+    width:calc(100% - 90px);
     margin:10px 0px 0px 15px;
 }
 
@@ -116,7 +117,18 @@
   position:relative;
   font-size:15px;
   line-height: 24px;
+  /* 文字两端对齐 */
+  text-align: justify;
 }
+
+/* 插槽样式写进了全局的index.css */
+/* .comment .wrapper .user-comment .slot-content{
+  margin:0px;
+  padding:0px;
+  position:relative;
+  font-size:15px;
+  line-height: 24px;
+} */
 
 .comment .wrapper .user-comment .comment-info{
   color:var(--vp-c-text-2);
