@@ -28,7 +28,7 @@ import BiliCommentTest from './components/BiliCommentTest.vue';
 export default {
     ...Theme,
     // 注释掉就会取消评论系统，断网时评论系统会影响路由变化的内容刷新
-    Layout: MyLayout,
+    // Layout: MyLayout,
 
     /**  medium-zoom 配置 
     - 目前有个bug，route变化后点击放大图片就不起作用了，可能需要一个watcher

@@ -141,7 +141,7 @@ body:has(.VPSidebar.open) {
 
 /* BiliComment组件中的slot插槽样式 */
 .vp-doc .slot-content p{
-  /* margin:0px; */
+  margin-bottom:0px;
   /* padding:0px; */
   /* position:relative; */
   font-size:15px;
