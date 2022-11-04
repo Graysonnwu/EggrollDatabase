@@ -31,6 +31,15 @@ body {
   margin-top: -10px;
   line-height: 22px;
 }
+/* 表格中的图片注释 */
+.vp-doc .imgCaptionX {
+  text-align: center;
+  font-size: 14px;
+  color:#909090;
+  line-height: 22px;
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
 
 .VPSidebar {
   overscroll-behavior: contain;
