@@ -2,7 +2,7 @@
     import { ref } from 'vue';
     const props = defineProps<{
         name:String,
-        content:String,
+        content?:String,
         time?:String,
         like?:String,
         reply?:String,
