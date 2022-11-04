@@ -109,7 +109,7 @@
 ```
 
 ::: details 【Bilibili】卖大麻竟然都卖亏本，加拿大此刻啥心情？
-<iframe src="//player.bilibili.com/player.html?bvid=BV1st411L7ne&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height=400 width=100%> </iframe>
+<iframe src="https://player.bilibili.com/player.html?bvid=BV1st411L7ne&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height=400 width=100%> </iframe>
 :::
 
 ```html
