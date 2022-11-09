@@ -1,50 +1,41 @@
 # 测试页面
 
-<!-- <BiliCommentTest name="觅东邻" content="作为一个四川人，也非常反对一刀切停工业用电，保居民用电。其实，把麻将馆的空调全关了，就能解决相当用电缺口！" reply="<div class='bc-reply'>迦勒底的第六任所长</div>不，应该把大部分人都集中在麻将馆之类的公共场合，在家里不要再开空调了，就可以节省一部分电力<br><div class='bc-reply'>洞庭居士陈铭哲</div>回复 @迦勒底的第六任所长：在体育馆举办麻将大赛，集体吹空调">
-
-文字内容
-
-> [这是一个插槽，能够用markdown渲染](#自定义扩展-vue-组件)
-
-</BiliCommentTest> -->
-
-<BiliCommentTest name="匿名贰鼠无uid" content="过去中国搞建设虽然也有通过无人区的铁路，但是绝大多数铁路至少有一端是人口稠密地区，这条敦格铁路的两端，敦煌19万人口，格尔木也只有20万人口出头，<br>为什么要为这两个小城市修一条直通的铁路呢？"/>
-
-<BiliCommentTest name="匿名贰鼠uid=0" content="过去中国搞建设虽然也有通过无人区的铁路，但是绝大多数铁路至少有一端是人口稠密地区，这条敦格铁路的两端，敦煌19万人口，格尔木也只有20万人口出头，<br>为什么要为这两个小城市修一条直通的铁路呢？" uid="0"/>
-
-<BiliCommentTest name="贰鼠无uid" content="过去中国搞建设虽然也有通过无人区的铁路，但是绝大多数铁路至少有一端是人口稠密地区，这条敦格铁路的两端，敦煌19万人口，格尔木也只有20万人口出头，<br>为什么要为这两个小城市修一条直通的铁路呢？"/>
-
-<BiliCommentTest name="贰鼠uid=22245854" content="过去中国搞建设虽然也有通过无人区的铁路，但是绝大多数铁路至少有一端是人口稠密地区，这条敦格铁路的两端，敦煌19万人口，格尔木也只有20万人口出头，<br>为什么要为这两个小城市修一条直通的铁路呢？" uid="22245854"/>
-
-<!-- <BiliCommentTest name="陈睿" content="你所热爱的，就是你的生活。"  time="2020-05-04 00:14" like="79586" reply="<div class='bc-reply'>蒙古上单</div>你 妈什么时候死啊？"/> -->
-
-<!-- <BiliComment name="贰鼠" content="过去中国搞建设虽然也有通过无人区的铁路，但是绝大多数铁路至少有一端是人口稠密地区，这条敦格铁路的两端，敦煌19万人口，格尔木也只有20万人口出头，<br>为什么要为这两个小城市修一条直通的铁路呢？"/> -->
-
+部分Badge内部为设置的搜狗快捷短语，本人用的是小鹤双拼，如<Badge type="info" text="hvvh(徽章)" />
 
 <!-- <LineChartx /> -->
 <!-- <linechart :chartData="{labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],datasets: [{label: 'Data One',backgroundColor: '#f87979',data: [40, 39, 10, 40, 39, 80, 40]}]}" :chartOptions="{responsive: true,maintainAspectRatio: false}"/> -->
 
 ## 常用emoji
 
-| 🔄 后续hzxu | ⏩ 预告kkjb | 🔘 简讯jmxy | 📰 广告bcvi | 💬 评论pkly |
-| :--------: | :--------: | :--------: | :--------: | :--------: |
-| 🏞️ 照片vcpm | 📄 文档wfdh |   👍 赞zj   |   👎 踩cd   |  ❓ 问号wh  |
+🔄 后续<Badge type="info" text="hzxu" />&nbsp;&nbsp;&nbsp;
+⏩ 预告<Badge type="info" text="kkjb" />&nbsp;&nbsp;&nbsp;
+🔘 简讯<Badge type="info" text="jmxy" />&nbsp;&nbsp;&nbsp;
+📰 广告<Badge type="info" text="bcvi" />&nbsp;&nbsp;&nbsp;
+💬 评论<Badge type="info" text="pkly" />
+
+🏞️ 照片<Badge type="info" text="vcpm" />&nbsp;&nbsp;&nbsp;
+📄 文档<Badge type="info" text="wfdh" />&nbsp;&nbsp;&nbsp;
+👍 赞<Badge type="info" text="zj" />&nbsp;&nbsp;&nbsp;
+👎 踩<Badge type="info" text="cd" />&nbsp;&nbsp;&nbsp;
+❓ 问号<Badge type="info" text="wh" />
 
 ## 常用html
 
-**<span style='color:orange'>静静提问为加粗橙色（搜狗jkjk）</span>** <span style='color:grey'>灰色为不重要的内容</span>
+**<span style='color:orange'>静静提问为加粗橙色</span>** <MyBadge hue=30 text="jkjk" />
+<span style='color:grey'>灰色为不重要的内容</span><Badge type='info' text="grey" />
 
 ```html
 **<span style='color:orange'>橙色加粗</span>**
 <span style='color:grey'>灰色</span>
 ```
 
-<span style='color:#db1f1f;background-color:#db1f1f22;'>~~删除（搜狗delete）~~</span> 
-<span style='color:#97cb25;background-color:#97cb2522;'>插入（搜狗insert）</span>
+仿知乎问题日志的文字增删效果
+<span class='delete'>删除文字</span><MyBadge hue=0 text="delete" />
+<span class='insert'>插入文字</span><MyBadge hue=80 text="insert" />
 
 ```html
-<span style='color:#db1f1f;background-color:#db1f1f22;'>~~删除（搜狗delete）~~</span>
-<span style='color:#97cb25;background-color:#97cb2522;'>插入（搜狗insert）</span>
+<span class='delete'>删除</span>
+<span class='insert'>插入</span>
 ```
 
 下标<sub>[1]</sub>  上标<sup>[2]</sup>  <ruby>注音<rt>zhùyīn</rt></ruby> 
@@ -64,56 +55,79 @@
 <a href=“#标签”>显示内容</a>
 ```
 
-<div style='text-align:center;font-size:14px;color:#777'>图片说明居中</div>
+<p class="imgCaption">图片说明居中<Badge type="info" text="vuui" /></p>
+
+<p class="imgCaption">常规文字 <a href="https://github.com/vuejs/vitepress">可以带链接</a><Badge type="info" text="vuuil" /></p>
 
 ```html
-<div style='text-align:center;font-size:14px;color:#777'>图片说明居中</div>
+<p class="imgCaption">图片说明居中</p> <!-- 搜狗vuui(注释) -->
+<p class="imgCaption">常规文字 
+  <a href="https://github.com/vuejs/vitepress">
+    可以带链接 <!-- 搜狗vuuil(注释link) -->
+  </a>
+</p>
 ```
 
+## Badge 徽章 <MyBadge hue=300 text="二级标题样式不同" />
+
+Badge <Badge type="info"><span style='color:orange'>alpha.27</span> 新增</Badge>
+以及我自定义的组件 MyBadge（需传入hue值，见下方）<Badge type="info" text="hvvh" /><MyBadge hue=150 text="hvvhx" />
+
+<Badge type="info" text="info" />
+<Badge type="tip" text="tip" />
+<Badge type="warning" text="warning" />
+<Badge type="danger" text="danger" />
+<Badge type="info" text="插槽" />
+<br>
+
+<MyBadge hue=0 text="0" /><MyBadge hue=10 text="10" /><MyBadge hue=20 text="20" /><MyBadge hue=30 text="30" /><MyBadge hue=40 text="40" /><MyBadge hue=50 text="50" /><MyBadge hue=60 text="60" /><MyBadge hue=70 text="70" /><MyBadge hue=80 text="80" /><MyBadge hue=90 text="90" />
+
+<MyBadge hue=100 text="100" /><MyBadge hue=110 text="110" /><MyBadge hue=120 text="120" /><MyBadge hue=130 text="130" /><MyBadge hue=140 text="140" /><MyBadge hue=150 text="150" /><MyBadge hue=160 text="160" /><MyBadge hue=170 text="170" /><MyBadge hue=180 text="180" /><MyBadge hue=190 text="190" />
+
+<MyBadge hue=200 text="200" /><MyBadge hue=210 text="210" /><MyBadge hue=220 text="220" /><MyBadge hue=230 text="230" /><MyBadge hue=240 text="240" /><MyBadge hue=250 text="250" /><MyBadge hue=260 text="260" /><MyBadge hue=270 text="270" /><MyBadge hue=280 text="280" /><MyBadge hue=290 text="290" />
+
+<MyBadge hue=300 text="300" /><MyBadge hue=310 text="310" /><MyBadge hue=320 text="320" /><MyBadge hue=330 text="330" /><MyBadge hue=340 text="340" /><MyBadge hue=350 text="350" /><MyBadge hue=360 text="360" />
+
+```html
+<Badge type="info" text="..." />
+<Badge type="tip" text="..." /> <!-- 无type则默认为tip -->
+<Badge type="warning" text="..." />
+<Badge type="danger" text="..." />
+<Badge type="info">插槽</Badge>
+<MyBadge hue=300 text="..." /> <!-- 自定义颜色，hue值见上方 -->
+```
 
 ## 自定义块及iframe
 
 
-::: info 往期马督工点评
-灰色，搜狗info
+::: info 往期马督工点评 <Badge type="info" text="info" />
 :::
 
-::: tip 搬运者注
-绿色，搜狗tip
+::: tip 搬运者注 <Badge type="tip" text="tip" />
 :::
 
-::: warning 马督工点评
-黄色，搜狗warning、mdg
+::: warning 马督工点评 <Badge type="warning" text="warning" /> <Badge type="warning" text="mdg(马督工)" />
 :::
 
-::: danger 编辑
-红色，搜狗danger、bmji
+::: danger 编辑吐槽 <Badge type="danger" text="danger" /> <Badge type="danger" text="bmji(编辑)" />
+:::
+
+::: details 点击展开 <MyBadge hue=200 text="details" /> <MyBadge hue=200 text="bilibili" /> <MyBadge hue=200 text="youtube" />
+通常用于嵌入视频iframe，如下方演示
 :::
 
 ```markdown
-::: info 往期马督工点评
-灰色
-:::
-
-::: tip 搬运者注
-绿色
-:::
-
-::: warning 马督工点评
-黄色
-:::
-
-::: danger 编辑
-红色
+::: info | tip | warning | danger | details 标题
+内容
 :::
 ```
 
-::: details 【Bilibili】卖大麻竟然都卖亏本，加拿大此刻啥心情？
+::: details 嵌入视频iframe示例
 <iframe src="https://player.bilibili.com/player.html?bvid=BV1st411L7ne&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height=400 width=100%> </iframe>
 :::
 
 ```html
-::: details 【Bilibili】卖大麻竟然都卖亏本，加拿大此刻啥心情？
+::: details 标题
 <iframe src="播放器链接" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height=400 width=100%> </iframe>
 :::
 ```
@@ -140,14 +154,14 @@ $$
 
 ### Twitter Embed（vue-tweet）
 
-原生方法：https://publish.twitter.com/#
+原生方法：[推特官方提供](https://publish.twitter.com/#)
 
 <blockquote class="twitter-tweet" align="center"><p lang="ja" dir="ltr">好想有人陪着呀……</p>&mdash; 我好惨。我是垃圾。我全面溃败。来生再见。 (@timoskky) <a href="https://twitter.com/timoskky/status/1584179519874682882?ref_src=twsrc%5Etfw">October 23, 2022</a></blockquote>
 
 ```html
 <blockquote class="twitter-tweet" align="center"><p lang="ja" dir="ltr">好想有人陪着呀……</p>&mdash; 我好惨。我是垃圾。我全面溃败。来生再见。 (@timoskky) <a href="https://twitter.com/timoskky/status/1584179519874682882?ref_src=twsrc%5Etfw">October 23, 2022</a></blockquote>
 ```
-vue-tweet插件：https://github.com/DannyFeliz/vue-tweet
+[vue-tweet插件](https://github.com/DannyFeliz/vue-tweet) （暂时取消）：
 
 <!-- <Tweet tweet-id="1582133989544165376" width=550 align="center" lang="zh-cn"/> -->
 
@@ -157,27 +171,23 @@ vue-tweet插件：https://github.com/DannyFeliz/vue-tweet
 ### mermaid（vitepress-plugin-mermaid）
 
 ```mermaid
-sequenceDiagram
-Alice->>John: Hello John, how are you?
-loop Healthcheck
-    John->>John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John-->>Alice: Great!
-John->>Bob: How about you?
-Bob-->>John: Jolly good!
+graph LR
+  a(Step1)---b(Step2)-->c([finish])
 ```
 
 ### 图片点击放大（medium-zoom）
 
-![test](/eggroll-large.png)
+以及图片表格样式调整（只保留内部竖边框）
+
+| ![test](/eggroll-large.png) | ![test](/eggrollclub.png) |
+| --------------------------- | ------------------------- |
 
 ### Sitemap（sitemap）
 
-[点击加载](/sitemap.xml)
-### 自定义扩展 Vue 组件
+点击加载： [sitemap.xml](/sitemap.xml) 、 [sitemap.txt](/sitemap.txt)
+### 自定义组件-仿B站评论（BiliComment）
 
-基础：
+基础：<Badge type="info" text="bcx" />
 
 <BiliComment name="贰鼠" content="过去中国搞建设虽然也有通过无人区的铁路，但是绝大多数铁路至少有一端是人口稠密地区，这条敦格铁路的两端，敦煌19万人口，格尔木也只有20万人口出头，<br>为什么要为这两个小城市修一条直通的铁路呢？"/>
 
@@ -185,7 +195,7 @@ Bob-->>John: Jolly good!
 <BiliComment name="昵称" content="内容<br>换行"/>
 ```
 
-完整：
+完整：<Badge type="info" text="bc" /> <Badge type="info" text="reply" />
 
 <BiliComment name="陈睿" content="你所热爱的，就是你的生活。"  time="2020-05-04 00:14" like="79586" reply="<div class='bc-reply'>蒙古上单</div>你 妈什么时候死啊？"/>
 
@@ -199,6 +209,17 @@ Bob-->>John: Jolly good!
   reply="<div class='bc-reply'>蒙古上单</div>你 妈什么时候死啊？"
 />
 ```
+
+可用插槽：<Badge type="info" text="bcs (bc-slot)" />
+
+<BiliComment name="匿名甲">
+
+插槽内可用md语法，以及自定义组件<Badge type="info" text="slot" />
+```html
+<BiliComment name="匿名甲">一些内容。。。</BiliComment>
+```
+
+</BiliComment>
 
 ### 评论系统（Valine）
 

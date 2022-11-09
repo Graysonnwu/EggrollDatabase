@@ -14,6 +14,36 @@ body {
   line-height: 28px;
 }
 
+/* 含有图片的表格背景全设为透明，同时只保留内部竖边框，has伪类兼容性不太行 */
+.vp-doc tr:nth-child(2n):has(img),
+.vp-doc th:has(img),
+.dark .vp-doc th:has(img) {
+  background-color: transparent;
+}
+/* 取消所有横边框 */
+.vp-doc tr:has(img),
+.vp-doc th:has(img),
+.vp-doc td:has(img){
+  border-top: none;
+  border-bottom: none;
+}
+/* 取消外部竖边框 */
+.vp-doc th:first-child:has(img),
+.vp-doc td:first-child:has(img){
+  border-left: none;
+}
+.vp-doc th:last-child:has(img),
+.vp-doc td:last-child:has(img){
+  border-right: none;
+}
+
+/* 表格居中 */
+.vp-doc table {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* 图片居中 */
 .vp-doc img {
   display: block;
@@ -27,16 +57,13 @@ body {
 .vp-doc .imgCaption {
   text-align: center;
   font-size: 14px;
+  font-weight: 400;
   color:#909090;
   margin-top: -10px;
   line-height: 22px;
 }
 /* 表格中的图片注释 */
-.vp-doc .imgCaptionX {
-  text-align: center;
-  font-size: 14px;
-  color:#909090;
-  line-height: 22px;
+.vp-doc table .imgCaption {
   margin-top: 5px;
   margin-bottom: -5px;
 }
@@ -163,4 +190,15 @@ body:has(.VPSidebar.open) {
 
 .vp-doc .slot-content li+li{
   margin-top: 4px;
+}
+
+/* 增删文字，仿知乎问题日志风格 */
+.delete {
+  color:#db1f1f;
+  background-color:#db1f1f22;
+  text-decoration:line-through;
+}
+.insert {
+  color:#97cb25;
+  background-color:#97cb2522;
 }

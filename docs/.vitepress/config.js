@@ -93,11 +93,11 @@ export default withMermaid(
       nav: [
         { text: '1~100期', link: '/1-100期/', activeMatch: '/1-100期/' },
         { text: '101~200期', link: '/101-200期/', activeMatch: '/101-200期/' },
-        { text: '201~300期', link: '/201-300期/', activeMatch: '/201-300期/' },
-        { text: '301~400期', link: '/301-400期/', activeMatch: '/301-400期/' },
-        { text: '401~500期', link: '/401-500期/', activeMatch: '/401-500期/' },
+        // { text: '201~300期', link: '/201-300期/', activeMatch: '/201-300期/' },
+        // { text: '301~400期', link: '/301-400期/', activeMatch: '/301-400期/' },
+        // { text: '401~500期', link: '/401-500期/', activeMatch: '/401-500期/' },
         { text: '蛋卷俱乐部', link: '/club/', activeMatch: '/club/' },
-        // { text: 'Github', link: 'https://github.com/Graysonnwu/EggrollDatabase' },
+        { text: '测试页', link: '/test' },
 
         // {
         //   text: '下拉菜单',

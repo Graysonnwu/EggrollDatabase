@@ -1,7 +1,5 @@
 # 蛋卷俱乐部
 
-[临时测试页面](/test.md)
-
 非官方整理
 
 友链（皆为非官方）：[eggroll.club](https://eggroll.club/)、[EggrollPress](https://zam157.github.io/EggrollPress/)
