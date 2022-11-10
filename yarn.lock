@@ -271,7 +271,7 @@
   dependencies:
     "@types/node" "*"
 
-"@vitejs/plugin-vue@^3.1.2":
+"@vitejs/plugin-vue@^3.2.0":
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-3.2.0.tgz#a1484089dd85d6528f435743f84cdd0d215bbb54"
   integrity sha512-E0tnaL4fr+qkdCNxJ+Xd0yM31UwMkQje76fsDVBBUCoGOUPexu2VDUYHL8P4CwV+zMvWw6nlRw19OnRKmYAJpw==
@@ -2403,7 +2403,7 @@ valine@^1.5.1:
     storejs "^1.0.25"
     xss "^1.0.6"
 
-vite@^3.1.8:
+vite@^3.2.3:
   version "3.2.3"
   resolved "https://registry.yarnpkg.com/vite/-/vite-3.2.3.tgz#7a68d9ef73eff7ee6dc0718ad3507adfc86944a7"
   integrity sha512-h8jl1TZ76eGs3o2dIBSsvXDLb1m/Ec1iej8ZMdz+PsaFUsftZeWe2CZOI3qogEsMNaywc17gu0q6cQDzh/weCQ==
@@ -2420,19 +2420,19 @@ vitepress-plugin-mermaid@^2.0.8:
   resolved "https://registry.yarnpkg.com/vitepress-plugin-mermaid/-/vitepress-plugin-mermaid-2.0.8.tgz#7a2447d9fa5835fdc00195859d7864d35aeb19a9"
   integrity sha512-ywWxTeg9kMv7ZPf/igCBF4ZHhWZAyRtbPnA12ICQuNK2AMp7r5IHOfnuX1EJQf8gNdsh8bcvvSvm8Ll92fdOTw==
 
-vitepress@^1.0.0-alpha.22:
-  version "1.0.0-alpha.27"
-  resolved "https://registry.yarnpkg.com/vitepress/-/vitepress-1.0.0-alpha.27.tgz#052c8be58b15da79bc9481fe5d8d41668d328116"
-  integrity sha512-7/PwlIRZANvB2uyi8oi4oMXuH84g2/pAaoymb+ObBCs60m0oVxKMPO28w7R/svqSnnE+bNDOuLzTCXt7gn513g==
+vitepress@^1.0.0-alpha.27:
+  version "1.0.0-alpha.28"
+  resolved "https://registry.yarnpkg.com/vitepress/-/vitepress-1.0.0-alpha.28.tgz#2f5d9bc7f21001044bb233a22fa00776e3fd3834"
+  integrity sha512-pvbLssDMgLUN1terajmPlFBxHSDGO4DqwexKbjFyr7LeELerVuwGrG6F2J1hxmwOlbpLd1kHXEDqGm9JX/kTDQ==
   dependencies:
     "@docsearch/css" "^3.3.0"
     "@docsearch/js" "^3.3.0"
-    "@vitejs/plugin-vue" "^3.1.2"
+    "@vitejs/plugin-vue" "^3.2.0"
     "@vue/devtools-api" "^6.4.5"
     "@vueuse/core" "^9.4.0"
     body-scroll-lock "4.0.0-beta.0"
     shiki "^0.11.1"
-    vite "^3.1.8"
+    vite "^3.2.3"
     vue "^3.2.41"
 
 vscode-oniguruma@^1.6.1:
