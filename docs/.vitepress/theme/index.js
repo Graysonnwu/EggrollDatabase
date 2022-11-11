@@ -3,7 +3,15 @@ import MyLayout from './components/MyLayout.vue'
 import { onMounted, watch, nextTick } from 'vue';
 import { useRoute } from "vitepress";
 import mediumZoom from 'medium-zoom';
-import MyBadge from './components/MyBadge.vue'
+import MyBadge from './components/MyBadge.vue';
+// import { CalendarHeatmap } from 'vue3-calendar-heatmap';
+// import pkg from 'vue3-calendar-heatmap';
+// const { CalendarHeatmap } = pkg;
+import * as VueCalendarHeatmap from 'vue3-calendar-heatmap'
+const { CalendarHeatmap } = VueCalendarHeatmap;
+// import Demo from './components/Calendar/Demo.vue';
+import HomePageCalendar from './components/Calendar/HomePageCalendar.vue';
+import Calendar100 from './components/Calendar/Calendar100.vue';
 // import Tweet from "vue-tweet";
 // import { Bar } from 'vue-chartjs'
 
@@ -11,6 +19,7 @@ import MyBadge from './components/MyBadge.vue'
 import './styles/mathjax3.css';
 import './styles/index.css'
 import './styles/color.css'
+import 'vue3-calendar-heatmap/dist/style.css'
 
 import BiliComment from './components/BiliComment.vue';
 import BiliCommentTest from './components/BiliCommentTest.vue';
@@ -53,5 +62,9 @@ export default {
         ctx.app.component("BiliComment",BiliComment);
         ctx.app.component("BiliCommentTest",BiliCommentTest);
         ctx.app.component("MyBadge",MyBadge);
+        ctx.app.component("CalendarHeatmap",CalendarHeatmap);
+        // ctx.app.component("Demo",Demo);
+        ctx.app.component("HomePageCalendar",HomePageCalendar);
+        ctx.app.component("Calendar100",Calendar100);
     }
 }

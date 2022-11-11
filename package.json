@@ -24,6 +24,7 @@
     "valine": "^1.5.1",
     "vitepress-plugin-mermaid": "^2.0.8",
     "vue-chartjs": "^4.1.2",
-    "vue-tweet": "^2.0.2"
+    "vue-tweet": "^2.0.2",
+    "vue3-calendar-heatmap": "^2.0.0"
   }
 }

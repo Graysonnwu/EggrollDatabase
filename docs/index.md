@@ -22,7 +22,7 @@ hero:
 features:
   - icon: 🐱
     title: 已经更新到第61期（2019年完）
-    details: 另外algolia全文搜索等做到四百多期的时候再加上吧（从62期开始图片采用sm.ms图床）
+    details: 另外algolia全文搜索等做到四百多期的时候再加上吧（从48期开始图片采用b站图床，若失效望提醒，感谢）
   - icon: 😿
     title: 网站仍在施工中。。。
     details: 明年继续，长期项目估计得花一年了。。。（点击跳转测试页面）
@@ -33,6 +33,7 @@ features:
     link: https://www.123pan.com/s/BrA8Vv-xR4Gv
 ---
 
+<HomePageCalendar />
 <!--
 <homebutton :list="[1, 2, 3, 4, 5, 6, 7, 8, 9]"/>
 <bc /> -->

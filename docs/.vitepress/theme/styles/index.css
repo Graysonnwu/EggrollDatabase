@@ -202,3 +202,8 @@ body:has(.VPSidebar.open) {
   color:#97cb25;
   background-color:#97cb2522;
 }
+
+/* 取消显示日历右下角图例 */
+.vch__container .vch__legend {
+  display: none !important;
+}

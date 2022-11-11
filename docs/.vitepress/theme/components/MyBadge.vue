@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineProps<{
-  hue: number
+  hue: string
   text?: string
 }>()
 </script>

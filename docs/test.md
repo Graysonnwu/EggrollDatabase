@@ -2,8 +2,15 @@
 
 部分Badge内部为设置的搜狗快捷短语，本人用的是小鹤双拼，如<Badge type="info" text="hvvh(徽章)" />
 
+<!-- 测试img标签，之前一直会报错 -->
+<!-- <img src="https://i0.hdslb.com/bfs/album/63ff2c96f5098419d122e063378b711411c62cfb.png" referrerpolicy="no-referrer"/> -->
+
 <!-- <LineChartx /> -->
 <!-- <linechart :chartData="{labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],datasets: [{label: 'Data One',backgroundColor: '#f87979',data: [40, 39, 10, 40, 39, 80, 40]}]}" :chartOptions="{responsive: true,maintainAspectRatio: false}"/> -->
+
+<!-- <Demo /> -->
+
+<!-- <CalendarHeatmap :values="[{ date: '2018-9-22', count: 6 },{ date: '2018-9-23', count: 7 },{ date: '2018-9-24', count: 8 }]" dark-mode/> -->
 
 ## 常用emoji
 
@@ -217,6 +224,25 @@ graph LR
 插槽内可用md语法，以及自定义组件<Badge type="info" text="slot" />
 ```html
 <BiliComment name="匿名甲">一些内容。。。</BiliComment>
+```
+
+</BiliComment>
+
+<BiliComment name="贰鼠（可点击）" time="2022-10-16 00:32" like="114514" uid="22245854" reply="<div class='bc-reply'>贰鼠二号</div>头像背景颜色是用散列函数根据用户名随机生成的，所以一个id只对应一个颜色<div class='bc-reply'>贰鼠三号</div>1. 添加了回复功能，如此<br>2. 添加了可选参数uid，用于点击昵称跳转链接，见上方<br>3. 添加了插槽功能，能在里面用md语法了，见下方">
+
+好不容易写了个评论组件，记录一下，今后督工的观众评论截图就用这个代替了，方便搜索。另外换行请用\<br\>
+
+</BiliComment>
+
+<BiliComment name="匿名贰鼠" content="若为匿名则头像为noface">
+
+```html
+<!-- （以下参数除name外均为可选项） -->
+<BiliComment 
+    name="昵称" content="内容" 
+    time="时间" like="赞数" uid="用于昵称链接">
+...
+</BiliComment>
 ```
 
 </BiliComment>
