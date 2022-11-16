@@ -207,3 +207,12 @@ body:has(.VPSidebar.open) {
 .vch__container .vch__legend {
   display: none !important;
 }
+
+/* 主页成员卡片样式调整 */
+.VPTeamMembersItem .affiliation {
+  padding-top: 10px !important;
+}
+
+.VPTeamMembersItem .links {
+  padding: 4px 0 0 !important;
+}

@@ -186,7 +186,7 @@ graph LR
 
 以及图片表格样式调整（只保留内部竖边框）
 
-| ![test](/eggroll-large.png) | ![test](/eggrollclub.png) |
+| ![test](/eggrollsvg.png) | ![test](/eggrollclub.png) |
 | --------------------------- | ------------------------- |
 
 ### Sitemap（sitemap）

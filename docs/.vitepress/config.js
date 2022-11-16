@@ -16,6 +16,7 @@ export default withMermaid(
     lang: 'zh-CN',
     title: '蛋卷数据库',
     description: '蛋卷数据库，睡前消息文字稿合集',
+    appearance: 'dark',
 
     base,
     lastUpdated: true,
@@ -73,7 +74,7 @@ export default withMermaid(
 
     themeConfig: {
       siteTitle: 'EggrollDatabase',
-      logo: '/eggroll.png',
+      logo: '/eggrollsvg.png',
       editLink: {
         pattern: 'https://github.com/graysonnwu/EggrollDatabase/edit/main/docs/:path',
         text: '在 GitHub 上编辑此页'

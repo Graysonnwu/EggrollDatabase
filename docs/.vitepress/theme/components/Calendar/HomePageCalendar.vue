@@ -1,7 +1,5 @@
 <template>
-    <br><br><br><br>
     <div class="HPCalendar">
-        <br>
         <div class="CMbox">
             <CalendarHeatmap
                 :values="data"
@@ -41,7 +39,7 @@
             />
             <div class="CMyear">2020年（60~215期）</div>
         </div>
-    
+        <br>
         <div class="CMbox">
             <CalendarHeatmap
                 :values="data"
@@ -92,7 +90,11 @@
 
 .HPCalendar {
     display: block;
+    padding: 10px 0 20px 0;
+    /* 与上一元素高度介于50~300px之间，根据页面高度计算（确保显示在第二页） */
+    margin: clamp(50px, 100vh - 1100px, 300px) 0 20px 0;
     border-top: 2px solid var(--vp-c-bg-soft);
+    border-bottom: 2px solid var(--vp-c-bg-soft);
     /* border-radius: 12px; */
     /* background-color: var(--vp-c-bg-soft); */
     transition: border-color 0.25s, background-color 0.25s;
@@ -118,9 +120,19 @@
     max-width: 575px;
 }
 
+@media (min-width: 768px) {
+    .HPCalendar {
+        margin: clamp(50px, 100vh - 880px, 300px) 0 20px 0;
+    }
+}
+
 @media (min-width: 960px) {
     .CMbox {
         width: 45%;
+    }
+
+    .HPCalendar {
+        margin: clamp(50px, 100vh - 650px, 300px) 0 20px 0;
     }
 }
 

@@ -515,4 +515,6 @@ export const data: Value[] = [
 	{ 'date' : '2022-11-08', 'count': 508 },
 	{ 'date' : '2022-11-10', 'count': 509 },
 	{ 'date' : '2022-11-11', 'count': 510 },
+	{ 'date' : '2022-11-13', 'count': 511 },
+	{ 'date' : '2022-11-15', 'count': 512 },
 ];
