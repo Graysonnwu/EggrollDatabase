@@ -89,7 +89,7 @@
 <style scoped>
 
 .HPCalendar {
-    display: block;
+    display: none;
     padding: 10px 0 20px 0;
     /* 与上一元素高度介于50~300px之间，根据页面高度计算（确保显示在第二页） */
     margin: clamp(50px, 100vh - 1100px, 300px) 0 20px 0;
@@ -118,6 +118,12 @@
     /* padding: 0 10px; */
     width: 100%;
     max-width: 575px;
+}
+
+@media (min-width: 640px) {
+    .HPCalendar {
+        display: block;
+    }
 }
 
 @media (min-width: 768px) {
